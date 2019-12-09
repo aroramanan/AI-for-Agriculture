@@ -1,0 +1,74 @@
+body,html {
+    height: 100%;
+}
+
+.chat-container {
+    margin: 0px;
+    padding: px;
+}
+
+.chat-message {
+  padding: 6px;
+  border-radius: 3px;
+  margin-bottom: 3px;
+}
+
+.bot-message {
+    background: green;
+    color: white;
+}
+
+.human-message {
+    background:dodgerblue;
+    color: white;
+    margin: 13px 1px;
+}
+
+.input {
+  width: 100%;
+  margin: 35px 0px;
+  height: 60px;
+  border: 1px solid rosybrown;
+  border-radius: 3px;
+}
+
+.image{
+    width: 100%;
+    margin: 35px 0px;
+    height: 60px;
+    border: 1px solid rosybrown;
+    border-radius: 3px;    
+}
+#recorder{
+    position: relative;
+    left: 330px;
+    top:80px;
+    color: black;
+    font-size: 35px;
+    
+}
+.dropdown{
+  margin: 10px;
+  height: 50px;
+  text-align: left;
+  margin-bottom: 20px;
+}
+.dropdown_name{
+  color: black;
+  font-weight: bold;
+  width: 30%;
+}
+.drop{
+  display: inline;
+  /* position: initial; */
+  top: 0px;
+  left: 120px;
+}
+#close{
+  margin-right: -170px;
+}
+.table-dialog{
+  max-width: 50%;
+}
+
+

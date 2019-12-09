@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "datax1-agritech",
+  "private_key_id": "ae12a0d0e81b65312582008dc21eba68ae07e4f1",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDJzzciVK1XSMq7\n5L+m4IeYayEufxtb/Se9N2Sz+B/SRMI/lateRpYsLP193rIB+sjaF5sJrQfdVqvI\nLV36+5e31td0ABg3qwnau2e3QwFZRFxLqCoICjMgzOnmVntWEBa541bLC3Nn96Xk\nGv0fGSidUXv1ffIMnKf46qhPxSc7gcc7LOmP1Cwjx2QKJSciLpcyPKgbKY7YfVA0\nDEf9kJtO8oNtFDivWZ8ZjBPwBsyUkubn1PlMN/uaXBHBH97SToVgkqFONJ5yG2x8\nnydCGBNIY3SIRAUGwEndUj9o3jqcyM9vTmJOY4icERfKfJJW7qne2AbE3BDiDrJM\n0Yw4zurNAgMBAAECggEAGrKdGp+VJvzsRRsn942wootZomsSVYMSJMgVPHHQ0+Jg\nyESmnRw9da6mAmbZqcVhmOiSjB8l8TQsGZlW24M5OQrlCeWRTpwD+7nbKLVmkkam\n5yNiHBotVWOGdgBu5J3QQ9s9ejMTm2d5vMmNPvX3F4jWG04EHYMD/bwddCAi5o4y\ndXBjaxhocUSFk6NOhGoFp7WcNUrDnUARyPAfJ1CRk5o9bLJyKdnBxEQyhRdODA4O\n9Z3w42sWh+hph0GIYzrK2J+Z2t8fxoNPbLKHZlgY2eBzlCsLlqBWW82AP3kDzi0d\nt4F91tAcbQPfDi/R1g12He7v8xEXEOTpEbykPiPKSQKBgQDuki3gfj1QVrzzoJ+6\nOvbmLuCH3Xh4jJosIZwHGMXDb6ceQC7adQvhaIL60NT/eyV4+jp+RDIJ1+Ld4myT\nqznyeHuWd6gKO/iTsMOBnDGoJSEHt5EBGqYHLf8j0p2gZJ4lYdbycajS4sE11fKm\n0APdJsRbN29rWOfZdFA4zHgVnwKBgQDYjYLRsOw0oMfcLnDetXpcktMBJt48n0f5\nlRG0er08BevfzaU1tTKleoeRrCl//lGGn1R8htA03/kDOBO9V0r15hGnfrTk1Mhg\nrgl4YwGqkA7T59SBmW3LCXIM+MbLfpdTwYvUe0qWoMu3nJTJCwrNU9SpqZ8iUVih\nfikolfiwEwKBgQCsYzx7Rz0O3F5UvPAuJYVa9uyPwFzY3uBYm0CfcCsW+YsMtNwm\nRwV6r4ZVrqj6owWE0WuK6cQukK0CICbM3aFVr/G93GC0ZHlOXyAme7L2CT5A0Uga\nQCNQdNA0FnCIAay03mnvbmnLWMa8HAjmuNDR8L1aHEiKjQebfgypvjXXiQKBgDkd\nUaSGmjXjNfM/mGtUx/oEi3xhSPoKNIyCIZJNUP20vhpf/bPln37/iyQDmUp1xADS\noxDY6a8YZ2/O6X3luRKT5JIdnA5ChLrjDAJhcn4O0qpXGbg4xDlpu1fqgVwIflcL\n1BptjiWeMTyzIpbHv8iZ1JwO7ba6Z7roMGjQ7S9bAoGBAOOHOFBBg+ItzXYqYJPQ\nAAzwnqIRMuD2oZyn3YMl2fJzuAHRulZHyWBofM2JKqdxI1gCLOPrAo2VCBkfXzTK\n7SfFwgFPgEcRnWNl+0lJ+xxJbzWremwMg9ikrc3qbE+A6Wn54WtmwI5WNdbbAPwT\njFHs4s/zkkteCyL6PrwlINLm\n-----END PRIVATE KEY-----\n",
+  "client_email": "agritech@datax1-agritech.iam.gserviceaccount.com",
+  "client_id": "108192107776165779591",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/agritech%40datax1-agritech.iam.gserviceaccount.com"
+}

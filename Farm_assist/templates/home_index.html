@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Home - Farm Assist</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='home_assets/bootstrap/css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cabin:700">
+    <link rel="stylesheet" href="{{ url_for('static', filename='home_assets/fonts/font-awesome.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='home_assets/css/style.css') }}">
+</head>
+
+<body id="page-top">
+    <nav class="navbar navbar-light navbar-expand-md navbar navbar-expand-lg fixed-top" id="mainNav">
+        <div class="container"><a class="navbar-brand js-scroll-trigger" href="/">Farm-Assist</a>
+            <button data-toggle="collapse" class="navbar-toggler navbar-toggler-right" data-target="#navbarResponsive" type="button" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"
+                value="Menu"><i class="fa fa-bars"></i></button>
+             <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="nav navbar-nav ml-auto">
+                    <li class="nav-item nav-link js-scroll-trigger" role="presentation"><a id='price' class="nav-link active js-scroll-trigger price" href="">Mandi Price</a></li>
+                    <li class="nav-item nav-link js-scroll-trigger" role="presentation"><a id="chat" class="nav-link js-scroll-trigger" href="/display_chatbot">Chatbot</a></li>
+                    <li class="nav-item nav-link js-scroll-trigger" role="presentation"></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header class="masthead" style="background-image:url('static/home_assets/img/intro-bg.jpg');">
+        <div class="intro-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                        <h1 class="brand-heading">Namastey!</h1>
+                        <p class="intro-text">I will help you to identify&nbsp;</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col text-center">
+                        <button id="chat" class="btn btn-light border rounded chat" type="button">Chat</button>
+                        <button id="price" class="btn btn-light border rounded price" type="button">Find Prices</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section id="download" class="download-section content-section text-center" style="background-image:url('static/home_assets/img/downloads-bg.jpg');">
+        <div class="container">
+            <div class="col-lg-8 mx-auto">
+                <h2>Contact us</h2>
+                <p>Feel free to leave us a comment on the<a href="#">&nbsp;Grayscale template overview page</a>&nbsp;to give some feedback about this theme!</p>
+                <ul class="list-inline banner-social-buttons">
+                    <li class="list-inline-item">&nbsp;<button class="btn btn-primary btn-lg btn-default" type="button"><i class="fa fa-google-plus fa-fw"></i><span class="network-name">&nbsp; Google+</span></button></li>
+                    <li class="list-inline-item">&nbsp;<button class="btn btn-primary btn-lg btn-default" type="button"><i class="fa fa-twitter fa-fw"></i><span class="network-name">&nbsp;Twitter</span></button></li>
+                    <li class="list-inline-item">&nbsp;<button class="btn btn-primary btn-lg btn-default" type="button"><i class="fa fa-github fa-fw"></i><span class="network-name">&nbsp;github</span></button></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- Modal -->
+   <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button id="close" type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="col-lg-12 text-center" style="height: 150px;width: 100%;">
+                        <div class="dropdown">
+                            <div class="dropdown_name">MARKET :</div>                       
+                            <select id='market'class="dropdown-menu drop" role="menu">
+                                <option value="0">- Select -</option>
+                            </select>
+                        </div>
+                        <div class="dropdown">
+                            <div class="dropdown_name">COMMODITY :</div>
+                            <select id='commodity'class="dropdown-menu drop" role="menu">
+                                <option value="0">- Select -</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button id="submit" type="button" class="btn btn-primary">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="tableModal" tabindex="-1" role="dialog" aria-labelledby="tableModalLabel" aria-hidden="true">
+            <div class="modal-dialog table-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button id="close" type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+                    </div>
+                    <div class="modal-body">
+                            <div class="col-lg-12 text-center">
+                                    <table id="pricetable" class="table table-striped" >
+                                            <thead>
+                                                <tr>
+                                                    <th>VARIETY</th>
+                                                    <th>MIN PRICE</th>
+                                                    <th>MAX PRICE</th>
+                                                    <th>AVG PRICE</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <!--body-->
+                                            </tbody>
+                                        </table>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container text-center">
+            <p>Copyright ©&nbsp;Brand 2018</p>
+        </div>
+    </footer>
+    <script src="{{ url_for('static', filename='home_assets/js/jquery.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='home_assets/bootstrap/js/bootstrap.min.js') }}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <script src="{{ url_for('static', filename='home_assets/js/grayscale.js') }}"></script>
+    <script src="https://js.pusher.com/4.1/pusher.min.js"></script>
+    <script src="{{ url_for('static', filename='home_assets/js/custom.js') }}"></script>
+</body>
+
+</html>
