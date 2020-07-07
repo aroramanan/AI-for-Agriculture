@@ -1,5 +1,4 @@
-# DataX-AgriAI
-Data X Project for AI in Agriculture
+# AgriAI
 
 Team Members:
 - Manan Arora
