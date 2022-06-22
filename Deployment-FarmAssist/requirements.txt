@@ -5,7 +5,7 @@ python-dotenv==0.10.3
 pusher==2.1.4
 gunicorn
 sklearn==0.20.4
-numpy==1.17.3
+numpy==1.22.0
 pandas==0.25.2
 re==2.2.1
 pyaudio==0.2.11
