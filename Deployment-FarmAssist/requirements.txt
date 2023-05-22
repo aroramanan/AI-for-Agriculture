@@ -10,7 +10,7 @@ pandas==0.25.2
 re==2.2.1
 pyaudio==0.2.11
 google-cloud
-requests==2.22.0
+requests==2.31.0
 json==2.0.9
 six==1.13.0
 google-api-core==1.14.3
